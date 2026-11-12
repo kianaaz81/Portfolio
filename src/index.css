@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+@media (min-width: 900px) {
+  html {
+    scrollbar-gutter: stable;
+  }
+}
+
+body {
+  margin: 0;
+  min-width: 0;
+  max-width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+}
+
+#root {
+  min-height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.skills-marquee-viewport {
+  overflow: clip !important;
+  width: 100%;
+  max-width: 100%;
+  touch-action: pan-y;
+  overscroll-behavior-x: none;
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  /* Force LTR track geometry so the loop seam stays correct in FA too */
+  direction: ltr;
+}
+
+.skills-marquee-track {
+  --marquee-shift: 0px;
+  display: flex;
+  width: max-content;
+  max-width: none;
+  gap: 0;
+  will-change: transform;
+  pointer-events: none;
+  backface-visibility: hidden;
+}
+
+.skills-marquee-track[data-animate='true'] {
+  animation: skills-marquee 35s linear infinite;
+}
+
+.skills-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.skills-marquee-group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 12px;
+  /* Trailing gap only — next copy starts with the same spacing (seamless) */
+  padding-inline-end: 12px;
+}
+
+@keyframes skills-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    /* Move exactly one group width (set via JS) — infinite seamless loop */
+    transform: translate3d(calc(-1 * var(--marquee-shift)), 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .skills-marquee-track[data-animate='true'] {
+    animation: none;
+  }
+}

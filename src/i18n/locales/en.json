@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "darkMode": "Switch to dark mode",
+    "lightMode": "Switch to light mode"
+  },
+  "hero": {
+    "role": "Junior Frontend Developer",
+    "tagline": "At Nadin Sadr Aria I work with React and TypeScript on real products — clear screens, shared components, and the small details that matter.",
+    "ctaProjects": "View projects",
+    "ctaContact": "My LinkedIn",
+    "statYears": "1.5+",
+    "statYearsLabel": "Years",
+    "statProjects": "2",
+    "statProjectsLabel": "Products",
+    "statLang": "EN/FA",
+    "statLangLabel": "Bilingual"
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "I see frontend as part of building the product",
+    "p1": "I'm Kiana, a junior frontend developer with about 1.5 years of experience. I work mostly with React and TypeScript inside a product team.",
+    "p2": "At Nadin Sadr Aria I help ship features for Sana and Enterprise AI — from shared components and forms to everyday fixes that keep the product moving.",
+    "points": [
+      "Shared components used across the product",
+      "Forms and product flows that users actually use",
+      "Small utilities and hooks that save time for the team",
+      "Fixes, polish, and bilingual support when needed"
+    ]
+  },
+  "projects": {
+    "eyebrow": "Work",
+    "title": "Projects",
+    "subtitle": "Two products I work on at Nadin Sadr Aria.",
+    "company": "Company",
+    "highlights": "My focus",
+    "tech": "Tech",
+    "sana": {
+      "name": "Sana",
+      "role": "Frontend developer",
+      "summary": "A company platform for processes and forms. I help build the parts people fill out and manage every day.",
+      "bullets": [
+        "Built reusable form pieces like date and color pickers for the shared form system",
+        "Improved process and task screens so flows feel clearer and more stable",
+        "Worked on uploads, permissions, and Persian/English text across the app",
+        "Fixed bugs and cleaned up UI behavior with the team"
+      ]
+    },
+    "enterpriseAi": {
+      "name": "Enterprise AI",
+      "role": "Frontend developer",
+      "summary": "An AI product platform for teams. I work on product screens and shared frontend pieces that support daily use.",
+      "bullets": [
+        "Helped build Studio and form features so teams can manage content more easily",
+        "Worked on chat and knowledge screens, including uploads and clearer actions",
+        "Improved access control and shared UI across different parts of the product",
+        "Added tests for some flows and fixed issues found during delivery"
+      ]
+    }
+  },
+  "skills": {
+    "eyebrow": "Skills",
+    "title": "Skills",
+    "subtitle": "What I use most in my work."
+  }
+}

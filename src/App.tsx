@@ -1,4 +1,4 @@
-import Box from '@mui/material/Box'
+import { Box } from '@mui/material'
 import { motion } from 'framer-motion'
 import { About } from './components/About'
 import { Hero } from './components/Hero'

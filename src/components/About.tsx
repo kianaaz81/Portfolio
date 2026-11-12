@@ -1,8 +1,4 @@
-import Box from '@mui/material/Box'
-import Container from '@mui/material/Container'
-import Grid from '@mui/material/Grid'
-import Paper from '@mui/material/Paper'
-import Typography from '@mui/material/Typography'
+import { Box, Container, Grid, Paper, Typography } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 
 export function About() {

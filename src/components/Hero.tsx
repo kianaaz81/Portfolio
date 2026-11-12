@@ -1,11 +1,13 @@
-import Box from '@mui/material/Box'
-import Button from '@mui/material/Button'
-import Chip from '@mui/material/Chip'
-import Container from '@mui/material/Container'
-import Grid from '@mui/material/Grid'
-import Paper from '@mui/material/Paper'
-import Stack from '@mui/material/Stack'
-import Typography from '@mui/material/Typography'
+import {
+  Box,
+  Button,
+  Chip,
+  Container,
+  Grid,
+  Paper,
+  Stack,
+  Typography,
+} from '@mui/material'
 import { motion, type Transition } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { profile, socialLinks } from '../data/links'

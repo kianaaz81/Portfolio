@@ -1,10 +1,12 @@
-import Box from '@mui/material/Box'
-import Chip from '@mui/material/Chip'
-import Container from '@mui/material/Container'
-import Grid from '@mui/material/Grid'
-import Paper from '@mui/material/Paper'
-import Stack from '@mui/material/Stack'
-import Typography from '@mui/material/Typography'
+import {
+  Box,
+  Chip,
+  Container,
+  Grid,
+  Paper,
+  Stack,
+  Typography,
+} from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import { projects } from '../data/projects'
 

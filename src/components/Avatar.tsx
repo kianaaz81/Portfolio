@@ -1,4 +1,4 @@
-import Avatar from '@mui/material/Avatar'
+import { Avatar } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
 import { profile } from '../data/links'
 

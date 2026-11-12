@@ -1,7 +1,5 @@
-import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined'
-import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined'
-import IconButton from '@mui/material/IconButton'
-import Tooltip from '@mui/material/Tooltip'
+import { DarkModeOutlined, LightModeOutlined } from '@mui/icons-material'
+import { IconButton, Tooltip } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import { useThemeContext } from '../theme/ThemeProvider'
 
@@ -22,9 +20,9 @@ export function ThemeToggle() {
         }}
       >
         {isDark ? (
-          <LightModeOutlinedIcon fontSize="small" />
+          <LightModeOutlined fontSize="small" />
         ) : (
-          <DarkModeOutlinedIcon fontSize="small" />
+          <DarkModeOutlined fontSize="small" />
         )}
       </IconButton>
     </Tooltip>

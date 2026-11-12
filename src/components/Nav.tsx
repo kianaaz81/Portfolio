@@ -1,12 +1,13 @@
-import CloseRoundedIcon from '@mui/icons-material/CloseRounded'
-import MenuRoundedIcon from '@mui/icons-material/MenuRounded'
-import AppBar from '@mui/material/AppBar'
-import Box from '@mui/material/Box'
-import Button from '@mui/material/Button'
-import Container from '@mui/material/Container'
-import IconButton from '@mui/material/IconButton'
-import Stack from '@mui/material/Stack'
-import Toolbar from '@mui/material/Toolbar'
+import { CloseRounded, MenuRounded } from '@mui/icons-material'
+import {
+  AppBar,
+  Box,
+  Button,
+  Container,
+  IconButton,
+  Stack,
+  Toolbar,
+} from '@mui/material'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
@@ -131,7 +132,7 @@ export function Nav() {
                   bgcolor: 'background.paper',
                 }}
               >
-                {open ? <CloseRoundedIcon /> : <MenuRoundedIcon />}
+                {open ? <CloseRounded /> : <MenuRounded />}
               </IconButton>
             </Stack>
 
@@ -183,7 +184,7 @@ export function Nav() {
                   aria-label={t('nav.closeMenu')}
                   sx={{ border: '1px solid', borderColor: 'divider' }}
                 >
-                  <CloseRoundedIcon />
+                  <CloseRounded />
                 </IconButton>
               </Stack>
             </Box>
